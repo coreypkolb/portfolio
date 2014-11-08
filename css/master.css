@@ -1,3 +1,21 @@
 body {
   font: 100% "Montserrat", sans-serif;
   color: #333; }
+
+h1 {
+  font-size: 14em;
+  line-height: .8em;
+  text-transform: uppercase;
+  letter-spacing: -.08em;
+  color: rgba(255, 74, 0, 0.77);
+  margin: 0;
+  position: relative; }
+
+h1:before {
+  content: "digital Native";
+  color: #41dbf4;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
