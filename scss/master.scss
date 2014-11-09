@@ -1,25 +1,45 @@
-$font-stack:    'Montserrat', sans-serif;;
+$font-stack:    'Montserrat', sans-serif;
+$secondary-font-stack: 'Yellowtail', cursive;
 $primary-color: #333;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background: url(/img/halftone.png) rgba(241, 255, 0, 0.17);
 }
  h1 {
  	font-size: 14em;
  	line-height: .8em;
  	text-transform: uppercase;
  	letter-spacing: -.08em;
- 	color: rgba(255, 74, 0, 0.77);
+ 	color: rgba(255, 74, 0, 1);
  	margin: 0;
  	position: relative;
+ 	mix-blend-mode: multiply;
  }
  h1:before {
- 	content: "digital Native";
- 	color: rgba(65, 219, 244, 1);
+ 	content: "Corey Kolb";
 	opacity: .7;
 	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
+	top: 3px;
+	left: 4px;
+	background-image: url(/img/bg-red.png);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgba(0,0,0,0);
+	margin-bottom: 20px;
+	transform: rotate(-.51deg)
+
+ }
+ .masthead{
+ 	background: url(/img/kolb-logo-blue.svg) no-repeat;
+ 	background-size: contain;
+ 	padding-left: 260px;
+	height: 382px;
+
+ }
+
+ h2{
+	font: 7em $secondary-font-stack;
+	margin: 0;
  }
