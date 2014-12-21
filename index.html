@@ -88,7 +88,7 @@
     </div>
   </div>
 </section>
-<section>
+<section data-sr='ease-in 10px'>
   <div class="row">
     <div class="col-md-4 grid">
       <figure class="effect-julia">
@@ -137,16 +137,22 @@
     <!-- Instagram in thie house -->
     <script type="text/javascript" src="bower_components/instafeed.js/min/instafeed.min.js"></script>
     <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
-    });
-    feed.run();
-</script>
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: 'YOUR_CLIENT_ID'
+        });
+        feed.run();
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
   </body>
 </html>
