@@ -24,7 +24,7 @@
   <div class="row">
     <div class="col-md-8 masthead">
          <h1>Corey</h1>
-         <h2>Digital Native</h2>
+         <h2 data-sr='ease-in 10px'>Digital Native</h2>
     </div>
   </div>
   <!-- end row -->
@@ -132,7 +132,27 @@
             </figcaption>     
           </figure>
     </div>
-  </DIV>
+  </div>
+</section>
+
+<section itemscope itemtype="http://data-vocabulary.org/Person">
+  <div class="row">
+    <div class="col-md-12">
+        <p class="intro">My name is <span itemprop="name">Corey Kolb</span>.
+        I live in 
+        <span itemprop="address" itemscope
+        itemtype="http://data-vocabulary.org/Address">
+        <span itemprop="locality">Jacksonville</span>, 
+        <span itemprop="region">FL</span> 
+        </span>
+        and work as a <span itemprop="title">visual engineer</span>
+        at <span itemprop="affiliation">Harbinger Innovation Group</span>.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- Instagram in thie house -->
     <script type="text/javascript" src="bower_components/instafeed.js/min/instafeed.min.js"></script>
@@ -150,9 +170,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
     <script>
-
       window.sr = new scrollReveal();
-
     </script>
   </body>
 </html>

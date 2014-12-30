@@ -6,7 +6,9 @@ $kolb-blue: #2683EA;
 ::selection {
   background: red; /* WebKit/Blink Browsers */
 }
-
+*{
+	transition: all .25s;
+}
 body {
   font: 100% $font-stack;
   color: $primary-color;
